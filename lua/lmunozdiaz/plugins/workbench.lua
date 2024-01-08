@@ -1,43 +1,18 @@
 local M = {
   {
-    'nvimdev/dashboard-nvim',
-    dependencies = { {'nvim-tree/nvim-web-devicons'} },
-    event = 'VimEnter',
-    opts = {
-      -- 'hyper' | 'doom'
-      theme = 'hyper',
-    },
+    'echasnovski/mini.starter',
+    version = "*",
+    opts = {},
     config = function(_, opts)
-      require('dashboard').setup(opts)
-    end,
+      require("mini.starter").setup(opts)
+    end
   },
   {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    },
-    opts = {
-      lsp = {
-        -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-        override = {
-          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-          ["vim.lsp.util.stylize_markdown"] = true,
-          ["cmp.entry.get_documentation"] = true,
-        },
-      },
-      -- you can enable a preset for easier configuration
-      presets = {
-        bottom_search = true, -- use a classic bottom cmdline for search
-        command_palette = true, -- position the cmdline and popupmenu together
-        long_message_to_split = true, -- long messages will be sent to a split
-        inc_rename = false, -- enables an input dialog for inc-rename.nvim
-        lsp_doc_border = false, -- add a border to hover docs and signature help
-      },
-    },
+    'echasnovski/mini.notify',
+    version = "*",
+    opts = {},
     config = function(_, opts)
-      require("noice").setup(opts)
+      require("mini.notify").setup(opts)
     end
   },
   {
@@ -79,19 +54,6 @@ local M = {
     },
     config = function(_, opts)
       require("toggleterm").setup(opts)
-    end
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    opts = {
-      theme = "catppuccin",
-      options = {
-        section_separators = "",
-        component_separators = "",
-      }
-    },
-    config = function(_, opts)
-      require("lualine").setup(opts)
     end
   },
 }

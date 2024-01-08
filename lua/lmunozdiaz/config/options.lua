@@ -3,12 +3,15 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- line wrap
-vim.opt.wrap = false
+vim.opt.wrap = true
+vim.opt.textwidth = 80
+vim.opt.linebreak = true
 
 -- spacing
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
+vim.opt.tabstop = 2
 
 -- number line
 vim.opt.number = true
@@ -31,3 +34,5 @@ vim.opt.incsearch = true
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
+-- buffer
+vim.opt.hidden = true

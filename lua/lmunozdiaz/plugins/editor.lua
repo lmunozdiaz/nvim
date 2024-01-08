@@ -9,21 +9,6 @@ local M = {
     end
   },
   {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {
-      scope = {
-        enabled = false,
-      },
-      exclude = {
-        filetypes = { "dashboard" }
-      },
-    },
-    config = function (_, opts)
-      require("ibl").setup(opts)
-    end
-  },
-  {
     "utilyre/sentiment.nvim",
     version = "*",
     event = "VeryLazy",
@@ -39,13 +24,6 @@ local M = {
       vim.g.loaded_matchparen = 1
     end,
   },
-  -- {
-  --   "RRethy/vim-illuminate",
-  --   opts = {},
-  --   config = function(_, opts)
-  --     require('illuminate').configure(opts)
-  --   end
-  -- },
   {
     "windwp/nvim-ts-autotag",
     opts = {},
@@ -60,7 +38,8 @@ local M = {
       require("tabout").setup(opts)
     end
   },
-  { 'echasnovski/mini.comment',
+  {
+    'echasnovski/mini.comment',
     version = '*',
     opts = {
       ignore_blank_line = true,
@@ -91,6 +70,22 @@ local M = {
     opts = {},
     config = function(_, opts)
       require('mini.jump').setup(opts)
+    end
+  },
+  {
+    'echasnovski/mini.move',
+    version = '*',
+    opts = {},
+    config = function(_, opts)
+      require('mini.move').setup(opts)
+    end
+  },
+  {
+    'echasnovski/mini.cursorword',
+    version = '*',
+    opts = {},
+    config = function(_, opts)
+      require('mini.cursorword').setup(opts)
     end
   },
 }
