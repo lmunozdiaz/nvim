@@ -2,8 +2,16 @@ local M = {
 	"rose-pine/neovim",
 	name = "rose-pine",
 	opts = {
+		groups = {
+			-- border = "overlay",
+			-- panel = "base",
+		},
 		highlight_groups = {
-			CursorLine = { bg = "none" },
+			-- Normal = { bg = "base" },
+			-- NormalFloat = { bg = "base" },
+			-- StatusLine = { bg = "base" },
+			-- StatusLineNC = { bg = "base" },
+			CursorLine = { bg = "#13121c" },
 			MatchParen = { bg = "base", fg = "love" },
 			MiniStarterHeader = { fg = "love" },
 			MiniStarterFooter = { fg = "rose" },

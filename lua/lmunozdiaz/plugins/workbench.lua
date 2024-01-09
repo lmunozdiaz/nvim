@@ -1,19 +1,19 @@
 local M = {
   {
-    'echasnovski/mini.starter',
+    "echasnovski/mini.starter",
     version = "*",
     opts = {},
     config = function(_, opts)
       require("mini.starter").setup(opts)
-    end
+    end,
   },
   {
-    'echasnovski/mini.notify',
+    "echasnovski/mini.notify",
     version = "*",
     opts = {},
     config = function(_, opts)
       require("mini.notify").setup(opts)
-    end
+    end,
   },
   {
     "akinsho/toggleterm.nvim",
@@ -54,7 +54,7 @@ local M = {
     },
     config = function(_, opts)
       require("toggleterm").setup(opts)
-    end
+    end,
   },
 }
 
