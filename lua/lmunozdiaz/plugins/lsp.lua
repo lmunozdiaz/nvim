@@ -16,15 +16,43 @@ local M = {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+			-- local lspconfig = require("lspconfig")
+			-- lspconfig.lua_ls.setup({})
+			-- lspconfig.tsserver.setup({})
+			-- lspconfig.jsonls.setup({})
+			-- lspconfig.html.setup({})
+			-- lspconfig.cssls.setup({})
+			-- lspconfig.emmet_ls.setup({})
+			-- lspconfig.marksman.setup({})
+			-- lspconfig.sqlls.setup({})
+
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({})
-			lspconfig.tsserver.setup({})
-			lspconfig.jsonls.setup({})
-			lspconfig.html.setup({})
-			lspconfig.cssls.setup({})
-			lspconfig.emmet_ls.setup({})
-			lspconfig.marksman.setup({})
-			lspconfig.sqlls.setup({})
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tsserver.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.jsonls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.emmet_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.marksman.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.sqlls.setup({
+				capabilities = capabilities,
+			})
 
 			-- Use LspAttach autocommand to only map the following keys
 			-- after the language server attaches to the current buffer
