@@ -30,9 +30,9 @@ vim.g.rainbow_delimiters = {
 	strategy = {
 		html = rainbow.strategy["noop"],
 	},
-	query = {
-		javascript = { "rainbow-parens" },
-	},
+	-- query = {
+	-- 	javascript = { "rainbow-parens" },
+	-- },
 	highlight = {
 		highlight(0, "RainbowDelimiterRed", { fg = "#ffd602" }),
 		highlight(0, "RainbowDelimiterYellow", { fg = "#da70d6" }),
