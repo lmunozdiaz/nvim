@@ -62,10 +62,6 @@ keymap("n", "<leader>e", "<Cmd>lua MiniFiles.open()<CR>")
 keymap("n", "<leader>ff", "<Cmd>Pick files<CR>", { desc = "Find files" })
 keymap("n", "<leader>fw", "<Cmd>Pick grep<CR>", { desc = "Find word" })
 keymap("n", "<leader>fi", "<Cmd>Pick grep_live<CR>", { desc = "Find word interactively" })
--- keymap("n", "<leader>fs", "<Cmd>Telescope git_files<CR>", { desc = "Grep (root dir)" })
--- keymap("n", "<leader>fr", "<Cmd>Telescope oldfiles<CR>", { desc = "Recent files" })
--- keymap("n", "<leader>fc", "<Cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "Fuzzy search" })
--- keymap("n", "<leader>fd", "<Cmd>Telescope diagnostics<CR>", { desc = "List diagnostics" })
 keymap("n", "<leader>fr", "<Cmd>Pick resume<CR>", { desc = "Resume latest picker" })
 
 -- Terminal
@@ -91,6 +87,9 @@ keymap("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search res
 -- Shifting selections
 keymap("v", ">", ">gv", { desc = "Visual shifting" })
 keymap("v", "<", "<gv", { desc = "Visual shifting" })
+
+-- Sorting
+keymap({ "v", "x" }, "<leader>so", "<Cmd>Sort<CR><Esc>", { desc = "Sort lines in ascending order" })
 
 -- Clear search with <esc>
 keymap({ "i", "n" }, "<esc>", "<Cmd>nohlsearch<CR><Esc>", { desc = "Escape and clear hlsearch" })
