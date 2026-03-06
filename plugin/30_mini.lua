@@ -435,7 +435,7 @@ later(function() require('mini.cmdline').setup() end)
 --
 -- It is not enabled by default because it is not really needed on a daily basis.
 -- Uncomment next line (use `gcc`) to enable.
--- later(function() require('mini.colors').setup() end)
+later(function() require('mini.colors').setup() end)
 
 -- Comment lines. Provides functionality to work with commented lines.
 -- Uses `:h 'commentstring'` option to infer comment structure.
