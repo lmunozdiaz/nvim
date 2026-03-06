@@ -39,6 +39,8 @@ now(function()
     background = '#1c1c1f',
     saturation = 'high',
   })
+  -- Custom overrides
+  vim.api.nvim_set_hl(0, 'MiniTablineFill', { link = 'MiniTablineCurrent' })
 end)
 
 -- You can try these other 'mini.hues'-based color schemes (uncomment with `gcc`):
