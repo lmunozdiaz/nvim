@@ -1,0 +1,28 @@
+Godot Colors
+Background: #1a1a1a
+Text: #cacaca
+Line Number: #ffffff80
+Current Line: #2a2a2a
+Line Length Guideline: #292929
+Brace Mismatch: #ff786b
+Indent Guide: #373d48
+Caret: #ffffff
+Caret Background: #000000
+Comment: #8d8d8d
+Symbol: #abc9ff
+Keyword: #ff7085
+Control: #ff8ccc
+Base Type: #42ffc2
+Engine Type: #8fffdb
+User Type: #c7ffed
+String: #ffeda1
+String Placeholder: #ffbf66
+String Name: #ffc2a6
+Number: #a1ffe0
+Function: #57b3ff
+Function Definition: #66e6ff
+Global Function: #a3a3f5
+Variable: #bce0ff
+Annotation: #ffb373
+Node Path: #b8c47d
+Node Reference: #63c259
